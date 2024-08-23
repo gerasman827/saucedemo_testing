@@ -12,7 +12,7 @@ describe('Login Tests', () => {
   });
 
   users.forEach(user => {
-    it(`Should attempt to login with ${user.username}`, () => {
+    it(`Debe poder iniciar sesión con ${user.username}`, () => {
       cy.get('#user-name').type(user.username);
       cy.get('#password').type(user.password);
 
