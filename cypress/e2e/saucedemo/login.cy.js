@@ -28,8 +28,7 @@ describe('Login Tests', () => {
         cy.contains('LOGIN').click();
   
         cy.url().should('include', '/inventory.html');
-        cy.get('.bm-burger-button').click();
-        cy.get('#logout_sidebar_link').click();
+        cy.go('back');
       });
     }
   });
