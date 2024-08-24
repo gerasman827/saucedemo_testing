@@ -6,7 +6,6 @@ describe('Login Tests', () => {
     { username: 'performance_glitch_user', password: 'secret_sauce' }
   ];
 
-
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com/v1/');
   });
