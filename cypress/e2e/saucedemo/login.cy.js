@@ -7,7 +7,7 @@ describe('Login Tests', () => {
   ];
 
   beforeEach(() => {
-    cy.visit('https://www.saucedemo.com/v1/');
+    cy.visit('/');
   });
 
   users.forEach(user => {

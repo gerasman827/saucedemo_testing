@@ -1,6 +1,6 @@
 describe("Form login", () => {
   beforeEach(() => {
-    cy.visit("https://www.saucedemo.com/v1/");
+    cy.visit("/");
   });
 
   it(`Debe existir un formulario para login`, () => {
