@@ -4,12 +4,12 @@ describe("Form login", () => {
   });
 
   it(`Debe existir un formulario para login`, () => {
-    cy.get("#user-name")
+    cy.get('input[type="text"]')
       .should("exist")
       .and("have.attr", "placeholder", "Username");
-    cy.get("#password")
+    cy.get('input[type="password"]')
       .should("exist")
       .and("have.attr", "placeholder", "Password");
-    cy.get("#login-button").should("exist").contains("LOGIN");
+    cy.get('input[type="submit"]').should("exist").contains("LOGIN");
   });
 });
