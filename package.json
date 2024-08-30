@@ -1,16 +1,16 @@
 {
   "devDependencies": {
-    "cypress": "^13.13.3"
+    "cypress": "^13.14.1"
   },
   "name": "esp-ing.soft",
   "version": "1.0.0",
   "main": "cypress.config.js",
   "dependencies": {
     "aggregate-error": "^3.1.0",
-    "ansi-regex": "^5.0.1",
-    "ansi-escapes": "^4.3.2",
-    "ansi-styles": "^4.3.0",
     "ansi-colors": "^4.1.3",
+    "ansi-escapes": "^4.3.2",
+    "ansi-regex": "^5.0.1",
+    "ansi-styles": "^4.3.0",
     "arch": "^2.2.0",
     "asn1": "^0.2.6",
     "assert-plus": "^1.0.0",
@@ -26,8 +26,8 @@
     "bluebird": "^3.7.2",
     "buffer": "^5.7.1",
     "buffer-crc32": "^0.2.13",
-    "call-bind": "^1.0.7",
     "cachedir": "^2.4.0",
+    "call-bind": "^1.0.7",
     "caseless": "^0.12.0",
     "chalk": "^4.1.2",
     "check-more-types": "^2.24.0",
@@ -143,9 +143,9 @@
     "side-channel": "^1.0.6",
     "signal-exit": "^3.0.7",
     "slice-ansi": "^3.0.0",
-    "strip-ansi": "^6.0.1",
     "sshpk": "^1.18.0",
     "string-width": "^4.2.3",
+    "strip-ansi": "^6.0.1",
     "strip-final-newline": "^2.0.0",
     "supports-color": "^8.1.1",
     "throttleit": "^1.0.1",
