@@ -3,7 +3,7 @@ describe('Seguridad', () => {
             cy.visit("/");
       });
 
-      it.only('Debería poder impedir la inyección SQL de tipo DELETE', () => {
+      it('Debería poder impedir la inyección SQL de tipo DELETE', () => {
             cy.get('#login_button_container');
             cy.get('input[type="text"]').as('input');
             cy.get('@input').should('exist');
