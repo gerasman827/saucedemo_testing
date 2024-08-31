@@ -31,5 +31,13 @@ describe('Login Tests', () => {
       });
     }
   });
+
+  it('Debería no permitir hacer login con usuarios no registrados', () => {
+    const username = 'benito';
+    const password = 'miclave';
+    cy.get('input[type="text"]').should('exist').type(username);
+    cy.get('input[type="password"]').should('exist').type(password);
+    cy.get('[type="submit"]').contains('LOGIN').click();
+  });
   
 });
