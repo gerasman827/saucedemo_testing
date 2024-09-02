@@ -44,7 +44,7 @@ describe('Login Tests', () => {
     });
   });
 
-  it.only('Debería no permitir hacer login con usuarios no registrados', () => {
+  it('Debería no permitir hacer login con usuarios no registrados', () => {
     dataUsers.fake_users.forEach((user) => {
       cy.login(user.username, user.password);
       cy.get('button[class="error-button"]').should('be.visible');
