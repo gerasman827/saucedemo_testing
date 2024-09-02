@@ -1,0 +1,27 @@
+{
+      "users": [
+            {
+                  "username": "standard_user",
+                  "password": "secret_sauce"
+            },
+            {
+                  "username": "performance_glitch_user",
+                  "password": "secret_sauce"
+            },
+            {
+                  "username": "problem_user",
+                  "password": "secret_sauce"
+            },
+            {
+                  "username": "locked_out_user",
+                  "password": "secret_sauce"
+            }
+      ],
+      "fake_users": [
+            { 
+                  "username": "benito",
+                  "password": "Miclave"
+            }
+      ]
+}
+
