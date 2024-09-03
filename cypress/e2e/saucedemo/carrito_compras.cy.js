@@ -16,7 +16,7 @@ describe("Carrito de compras", () => {
     cy.visit("/");
   });
 
-  it("Agregar 6 elementos al carrito de compras", () => {
+  it("Agregar 6 elementos al carrito de compras: Usuario 'standard_user'", () => {
     const cantElementosCarrito = 6;
     loginUserStandard();
     cy.url().should("eq", `${Cypress.config("baseUrl")}/inventory.html`);
@@ -28,7 +28,7 @@ describe("Carrito de compras", () => {
     );
   });
 
-  it("Eliminar 4 elementos del carrito de compras", () => {
+  it("Eliminar 4 elementos del carrito de compras: Usuario 'standard_user'", () => {
     loginUserStandard();
     cy.url().should("eq", `${Cypress.config("baseUrl")}/inventory.html`);
     add_products();
