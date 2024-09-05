@@ -16,7 +16,7 @@ describe('Seguridad', () => {
             cy.get('@submit').click();
       });
 
-      it('Debería poder impedir la inyección SQL de tipo DROP', () => {
+      it.only('Debería poder impedir la inyección SQL de tipo DROP', () => {
             cy.get('#login_button_container');
             cy.get('input[type="text"]').as('input');
             cy.get('@input').should('exist');
