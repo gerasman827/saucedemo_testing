@@ -1,10 +1,4 @@
 describe('Login Tests', () => {
-  /* const users = [
-    { username: 'locked_out_user', password: 'secret_sauce' },
-    { username: 'standard_user', password: 'secret_sauce' },
-    { username: 'problem_user', password: 'secret_sauce' },
-    { username: 'performance_glitch_user', password: 'secret_sauce' }
-  ]; */
 
  let dataUsers; 
 

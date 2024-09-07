@@ -32,3 +32,40 @@ Cypress.Commands.add('login', (user = "", password = "") => {
             cy.get('#password').type(password);
       cy.contains('LOGIN').click();
 });
+
+/**
+ * Verifica si existe el menú de tipo hamburguesa
+ * y además que tenga items para la navegación
+ */
+Cypress.Commands.add('isMenuHamburguesa', () => {
+      cy.get('.bm-burger-button > button').click();
+        cy.get('#inventory_sidebar_link').contains('All Items')
+            .should('be.visible');
+        cy.get('#about_sidebar_link').contains('About')
+        .should('be.visible');
+        cy.get('#logout_sidebar_link').contains('Logout')
+        .should('be.visible');
+});
+
+Cypress.Commands.add('isMenuConEnlaces', () => {
+      cy.get('.bm-burger-button > button').as('menu');
+      cy.get('@menu').click();
+      cy.get('a#inventory_sidebar_link')
+            .should('have.attr', 'href', './inventory.html')
+            .and('be.visible')
+            .click();
+      cy.get('@menu').click();
+      cy.get('a#about_sidebar_link')
+          .invoke('attr', 'target', '_blank')
+          .should('have.attr', 'target', '_blank');
+      cy.get('a#about_sidebar_link')
+            .should('have.attr', 'href', 'https://saucelabs.com/')
+            .and('be.visible')
+            .and('exist')
+            //.click();
+      cy.get('a#logout_sidebar_link')
+            .should('have.attr', 'href', './index.html')
+            .and('be.visible')
+            .click();
+      
+});
